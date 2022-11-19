@@ -1,0 +1,13 @@
+.container1 {
+    /*background-image: url(../img/fondos/bg001.jpg);*/
+    background-color: red;
+    /*background-repeat: no-repeat;*/
+    opacity: 0.7;
+    position : absolute;
+	
+    border-color: blue;
+    width:100vw;
+	height:100vh; 
+    margin: 0;
+	padding: 0;
+   }

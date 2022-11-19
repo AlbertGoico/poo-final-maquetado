@@ -1,0 +1,830 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Archivo Base</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous"> 
+    	<!--
+    <link href="css/all.css" rel="stylesheet"  crossorigin="anonymous">
+
+
+    <link href="css/fontawesome.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <link href="buscar.css" rel="stylesheet"  >
+-->
+</head>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+          <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+        </svg> REGISTRAR NUEVO</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select" aria-label="seleccione una categoria">
+          <option selected>SELECCIONE UNA CATEGORIA</option>
+          <option value="1">INVITADO</option>
+          <option value="2">PARTICIPPANTE</option>
+          <option value="3">ORGANIZADOR</option>
+          <option value="4">CHOFER</option>
+        </select>
+        <form class="form-floating">
+          <input type="email" class="form-control my-1" id="floatingInputValue" placeholder="Nombres" value="">
+          <label for="floatingInputValue">Nombres:</label>
+        </form>
+        <form class="form-floating">
+          <input type="email" class="form-control my-1" id="floatingInputValue" placeholder="Apellidos" value="">
+          <label for="floatingInputValue">Apellidos:</label>
+        </form>
+        <form class="form-floating">
+          <input type="email" class="form-control my-1" id="floatingInputValue" placeholder="Apellidos" value="">
+          <label for="floatingInputValue">Teléfono:</label>
+        </form>
+        <form class="form-floating">
+          <input type="email" class="form-control my-1" id="floatingInputValue" placeholder="Apellidos" value="">
+          <label for="floatingInputValue">Empresa:</label>
+        </form>
+        <form class="form-floating">
+          <input type="email" class="form-control my-1" id="floatingInputValue" placeholder="Apellidos" value="">
+          <label for="floatingInputValue">Cargo:</label>
+        </form>
+        <form class="form-floating">
+          <input type="email" class="form-control is-invalid my-1" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+          <label for="floatingInputInvalid">Correo</label>
+        </form>
+        <div class="form-floating">
+          <textarea class="form-control my-1" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Observaciones</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+
+      
+<button type="submit" class="btn btn-info  btn-lg   ">
+              
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+    <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+  </svg>
+             
+</button> 
+
+   
+<button type="submit" class="btn btn-success  btn-lg   ">
+              
+
+             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+  <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"/>
+</svg>
+             </button> 
+
+       
+   <button type="submit" class="btn btn-danger  btn-lg   " data-bs-dismiss="modal">
+              
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+             </button> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-FIN -->
+
+
+	<body background="./img/fondos/login3.jpg">
+
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">CONTROL DE ACCESO      |</span>
+        <div class="d-flex text-end">
+
+
+          <!--
+            <button type="submit" class="btn btn-dark  btn-lg   "> <i class="fa-solid fa-qrcode"></i>  
+            </button> 
+        -->
+              <button type="submit" class="btn btn-dark  btn-lg   ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
+                  <path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z"/>
+                  <path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z"/>
+                  <path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z"/>
+                  <path d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z"/>
+                  <path d="M12 9h2V8h-2v1Z"/>
+                </svg>
+            </button> 
+
+             <button type="submit" class="btn btn-dark  btn-lg   ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
+                <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
+                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+              </svg>
+             </button> 
+              
+              
+             <button type="submit" class="btn btn-dark  btn-lg   ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+              </svg>
+              </button> 
+             <button   class="btn btn-dark  btn-lg   "  type="button"   data-bs-toggle="modal" data-bs-target="#exampleModal"P>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+             </button> 
+                     
+             <button type="submit" class="btn btn-dark  btn-lg   ">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+              </svg>
+             </button> 
+            </div>
+             <!-- 
+<button type="submit" class="btn btn-dark  btn-lg   ">
+          <i class="fa-solid fa-chart-pie"></i>
+           </button> 
+ <button type="submit" class="btn btn-dark  btn-lg   ">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                 </button> 
+  <button type="submit" class="btn btn-dark  btn-lg   ">
+                        <i class="fa-solid fa-user-clock"></i>
+                         </button> 
+              -->
+      </div>
+      
+    </nav>
+
+    <!--  -->
+    
+
+<!--     <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+  
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+      </svg>Toast Header</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p>Some text inside the toast body</p>
+    </div>
+  </div> -->
+  <button type="button" class="btn btn-primary" id="toastbtn">Show live toast</button>
+
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+  </div>
+    <script>
+      document.getElementById("toastbtn").onclick = function() {
+        var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+        var toastList = toastElList.map(function(toastEl) {
+          return new bootstrap.Toast(toastEl)
+        })
+        toastList.forEach(toast => toast.show()) 
+      }
+      </script>
+      
+<!--  -->
+
+
+	  <section class="vh-100   bg-transparent" >
+  <div class="container py-2 h-flex  ">
+    <div class="row d-flex justify-content-center align-items-center h-100 ">
+      <div class="col-md-12 col-lg-11  ">
+
+        <div class="card col-12 border-1 border-secondary    shadow ">
+          <!-- FILTRO DE BUSQUEDA - INICIO -->
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+
+
+          <div class="card-header p-3  bg-dark   ">
+          <div class="row ">
+            <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>
+              <p class="text-light" >LISTA DE INVITADOS</p></h5>
+            <div class="col col-12 col-md-8  py-1 mb-3">
+              <div class="row align-content-between">
+                <div class="col col-2 col-sm-2">
+                  <button type="submit" class="btn btn-dark  btn-lg   ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-qr-code-scan" viewBox="0 0 16 16">
+                      <path d="M0 .5A.5.5 0 0 1 .5 0h3a.5.5 0 0 1 0 1H1v2.5a.5.5 0 0 1-1 0v-3Zm12 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0V1h-2.5a.5.5 0 0 1-.5-.5ZM.5 12a.5.5 0 0 1 .5.5V15h2.5a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5Zm15 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H15v-2.5a.5.5 0 0 1 .5-.5ZM4 4h1v1H4V4Z"/>
+                      <path d="M7 2H2v5h5V2ZM3 3h3v3H3V3Zm2 8H4v1h1v-1Z"/>
+                      <path d="M7 9H2v5h5V9Zm-4 1h3v3H3v-3Zm8-6h1v1h-1V4Z"/>
+                      <path d="M9 2h5v5H9V2Zm1 1v3h3V3h-3ZM8 8v2h1v1H8v1h2v-2h1v2h1v-1h2v-1h-3V8H8Zm2 2H9V9h1v1Zm4 2h-1v1h-2v1h3v-2Zm-4 2v-1H8v1h2Z"/>
+                      <path d="M12 9h2V8h-2v1Z"/>
+                    </svg>
+                    
+                    
+                    </button> 
+                </div>    
+                <div class="col col-7  col-sm-8 form-outline ">
+                  <input type="text" id="form3" class="form-control form-control-lg  " placeholder="Buscar [QR] o nombres" />
+                   
+                </div>                
+                <div class="col col-2   ">
+                  <button type="submit" class="btn btn-danger d-sm-none  "> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                  </svg>
+                  </button> 
+                  <button type="submit" class="btn btn-danger d-none d-sm-inline btn-lg  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                      <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                    </svg>
+                   </button> 
+
+
+                </div>
+            </div>
+            </div>
+            <div class="col  col-sm-12 col-md-4 col-lg-4   py-1 d-inline justify-content-end">
+              <div class="row    ">
+                <div class="col col-9 col-sm-10 col-md-7 col-lg-8 ">
+                  <select class="form-select form-select-lg mb-0"       >
+                  <option selected value="ALL">ALL</option>
+                  <option value="20">20 </option>
+                  <option value="50">50 </option>
+                  <option value="100">100 </option>
+                  </select>
+                </div>
+                <div class="col ">
+                  <button type="submit" class="btn btn-success btn-sm-lg    d-sm-none    ">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                  </button>
+                  <button type="submit" class="btn btn-success   d-none  d-sm-inline  btn-lg      "> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                  
+                  </button>
+
+
+                </div>
+             
+              </div>
+            </div>
+
+
+            <!-- card participante - inicio -->
+            <div class="card mb-3 col-12 mr-3 ml-3   " >
+              <div class="row g-0">
+                <!-- SECCION - INICIO -->
+                <div class="col-md-4 mt-2   ">
+                  <h5 class="card-title m-2">Nombre del Participante</h5>
+                  <div class="card-title m-2  rounded p-2 text-light justify-content-center fw-bold" style="background-color: darkgray;"><center>CATEGORIA</center>  </div>
+                  <h5 class="card-title m-2">CARGO DE LA PERSONA</h5>
+                  <p class="card-title m-2 text-wrap fst-italic ">EMPRESA DE LA PERSONA</p>
+                  <div class="row  align-content-center"><center> <img src="img/PAIS/ARMENIA.PNG" class="img-thumbnail   rounded-start  col-5 col-sm-2 m-2 border-0 " alt="..."></center>
+                </div>
+                <div class="card-title m-2  rounded p-2 text-light justify-content-center fw-bold" style="background-color: #BE8D33;"><center>BRAZALETE DORADO</center>  </div>
+                </div>
+              <!-- SECCION - FIN -->
+              <!-- SECCION - INICIO -->
+                <div class="col-md-4">
+                  <div class="card-body">
+                    <!--  
+                    <h5 class="card-title">UBICACIÓN</h5> 
+                  -->
+                    <p class="card-text">
+                      
+                      <!-- tabla ubicacion - inicio -->
+
+                      <table class="table  table-striped">
+                        <thead class="table-dark">
+                          <tr>
+                            
+                            <th scope="col col-9">UBICACIÓN</th>
+                            <th scope="col col-3">CHECK</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              
+                            <td>ZONA -ZONA 1</td> 
+                            <td class="text-center">
+                                
+                              <div class="form-check ">
+                                <div class="row  d-flex ">
+                                  <div class="col justify-content-center">
+                                    <input class="form-check-input"  style="width: 3rem; height: 3rem;" type="checkbox" value="" checked  id="flexCheckDefault">
+                              
+                             
+                                  </div>
+                                </div>
+                             
+                              
+                            </div>
+                             <div class="sm">
+                               <small>
+                               20/03/2022<br>
+                                21:35 h </small>
+                            </div>
+                          </td>                           
+                          </tr>
+                          <tr>
+                             
+                            <td> ALMUERZO MESA 1</td>   
+                            <td>
+                               
+                              <div class="form-check">
+                              <input class="form-check-input" type="checkbox"style="width: 3rem; height: 3rem;" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                 
+                              </label>
+                            </div></td>                          
+                          </tr>
+                          <tr>
+                             
+                            <td> CENA TERRAZA - MESA - 3</td>      
+                            <td>
+                               
+                              <div class="form-check">
+                              <input class="form-check-input" type="checkbox" style="width: 3rem; height: 3rem;"value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                 
+                              </label>
+                            </div>
+                          </td>                       
+                          </tr>
+                           
+                        </tbody>
+                      </table>
+                      <!-- tabla ubicacion - fin -->
+
+
+
+                    </p>
+                    
+                  </div>
+                </div>
+              <!-- SECCION - FIN -->
+              <!-- SECCION - INICIO -->
+                <div class="col-md-4">
+                  <div class="card-body">
+                    
+
+                    <div class="row    ">
+                      <div class="col ">
+                        ACOMPAÑANTES:
+                      </div>
+                      <div class="col col-9 col-sm-10 col-md-7 col-lg-8 ">
+                        <select class="form-select form-select-lg mb-0"       >
+                        <option selected value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        </select>
+                      </div>
+                      <div class="col ">
+                        <button type="submit" class="btn btn-primary btn-sm-lg    d-sm-none    "> <i class="fa-regular fa-floppy-disk"></i></button>
+                        <button type="submit" class="btn btn-primary   d-none  d-sm-inline  btn-lg      "><i class="fa-regular fa-floppy-disk"></i></button>
+            
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <small class="text-muted">20/03/2022 </small>
+                        </div>
+                        <div class="col">
+                          <small class="text-muted"> 10:52 h</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-2">
+                      <div class="d-grid gap-2">
+
+                        <button class="btn btn-success" type="button">
+                          <svg   width="16" height="16" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                          </svg>
+                           REGISTRAR INVITADO</button>
+                           <div class="row">
+                            <div class="col">
+                              <small class="text-muted">20/03/2022 </small>
+                            </div>
+                            <div class="col">
+                              <small class="text-muted"> 10:52 h</small>
+                            </div>
+                          </div>
+                        <button class="btn btn-primary" type="button">
+                          <!--xmlns="http://www.w3.org/2000/svg"-->
+                          
+                          <svg  width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+                            <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                            <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+                          </svg>
+                          
+                          IMPRIMIR CREDENCIAL</button>
+                          <div class="row">
+                            <div class="col">
+                              <small class="text-muted">20/03/2022 </small>
+                            </div>
+                            <div class="col">
+                              <small class="text-muted"> 10:52 h</small>
+                            </div>
+                          </div>
+                        <button class="btn btn-info" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
+                          <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
+                          <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                        </svg>ASISTENCIA</button>
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+                      <div class="col">
+                        <small class="text-muted">20/03/2022 </small>
+                      </div>
+                      <div class="col">
+                        <small class="text-muted"> 10:52 h</small>
+                      </div>
+                    </div>
+                     
+                     
+                  </div>
+                </div>
+              <!-- SECCION - FIN -->
+
+              
+              </div>
+            </div>
+            <!-- card participante - fin  -->
+           
+
+             <!-- card participante - inicio -->
+             <div class="card mb-3 col-12 mr-3 ml-3   " style="background-color: rgb(168, 150, 150);" >
+              <div class="row g-0">
+                <!-- SECCION - INICIO -->
+                <div class="col-md-4 mt-2   ">
+                  <h5 class="card-title m-2">PRIMER TITULAR</h5>
+                  <h5 class="card-title m-2">Nombre del Participante</h5>
+                  <div class="card-title m-2  rounded p-2 text-light justify-content-center fw-bold" style="background-color: darkgray;"><center>CATEGORIA</center>  </div>
+                  <h5 class="card-title m-2">CARGO DE LA PERSONA</h5>
+                  <p class="card-title m-2 text-wrap fst-italic ">EMPRESA DE LA PERSONA</p>
+                  <div class="row  align-content-center m-2">
+                    
+                    <div class="col col-3">
+                      <input class="form-check-input" type="checkbox" style="width: 3rem; height: 3rem;"value="" id="flexCheckDefault" checked>
+
+                    </div>
+                    <div class="col">20/03/2022 23:54 h</div>
+                </div>
+                <div class="card-title m-2  rounded p-2 text-light justify-content-center fw-bold" style="background-color: #BE8D33;"><center>BRAZALETE DORADO</center>  </div>
+                </div>
+              <!-- SECCION - FIN -->
+                <!-- SECCION - INICIO -->
+                <div class="col-md-4 mt-2   ">
+                  <h5 class="card-title m-2">SEGUNDO TITULAR</h5>
+                  <h5 class="card-title m-2">Nombre del Participante</h5>
+                  <div class="card-title m-2  rounded p-2 text-light justify-content-center fw-bold" style="background-color: darkgray;"><center>CATEGORIA</center>  </div>
+                  <h5 class="card-title m-2">CARGO DE LA PERSONA</h5>
+                  <p class="card-title m-2 text-wrap fst-italic ">EMPRESA DE LA PERSONA</p>
+                  <div class="row  align-content-center m-2">
+                    
+                    <div class="col col-3">
+                      <input class="form-check-input" type="checkbox" style="width: 3rem; height: 3rem;"value="" id="flexCheckDefault" checked>
+
+                    </div>
+                    <div class="col">20/03/2022 23:54 h</div>
+                </div>
+                <div class="card-title m-2  rounded p-2 text-light justify-content-center fw-bold" style="background-color: #C9C9C9;"><center>BRAZALETE DORADO</center>  </div>
+                </div>
+              <!-- SECCION - FIN -->
+              
+
+
+              <!-- SECCION - INICIO -->
+                <div class="col-md-4">
+                  <div class="card-body">
+                    
+
+                    <div class="row    ">
+                      <div class="col ">
+                        ACOMPAÑANTES:
+                      </div>
+                      <div class="col col-9 col-sm-10 col-md-7 col-lg-8 ">
+                        <select class="form-select form-select-lg mb-0"       >
+                        <option selected value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        </select>
+                      </div>
+                      <div class="col ">
+                        <button type="submit" class="btn btn-primary btn-sm-lg    d-sm-none    "> <i class="fa-regular fa-floppy-disk"></i></button>
+                        <button type="submit" class="btn btn-primary   d-none  d-sm-inline  btn-lg      "><i class="fa-regular fa-floppy-disk"></i></button>
+            
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <small class="text-muted">20/03/2022 </small>
+                        </div>
+                        <div class="col">
+                          <small class="text-muted"> 10:52 h</small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-2">
+                      <div class="d-grid gap-2">
+
+                        <button class="btn btn-success" type="button">
+                          <svg   width="16" height="16" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                          </svg>
+                           REGISTRAR INVITADO</button>
+                           <div class="row">
+                            <div class="col">
+                              <small class="text-muted">20/03/2022 </small>
+                            </div>
+                            <div class="col">
+                              <small class="text-muted"> 10:52 h</small>
+                            </div>
+                          </div>
+                        <button class="btn btn-primary" type="button">
+                          <!--xmlns="http://www.w3.org/2000/svg"-->
+                          
+                          <svg  width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
+                            <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                            <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+                          </svg>
+                          
+                          IMPRIMIR CREDENCIAL</button>
+                          <div class="row">
+                            <div class="col">
+                              <small class="text-muted">20/03/2022 </small>
+                            </div>
+                            <div class="col">
+                              <small class="text-muted"> 10:52 h</small>
+                            </div>
+                          </div>
+                        <button class="btn btn-info" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
+                          <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
+                          <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                        </svg>ASISTENCIA</button>
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+                      <div class="col">
+                        <small class="text-muted">20/03/2022 </small>
+                      </div>
+                      <div class="col">
+                        <small class="text-muted"> 10:52 h</small>
+                      </div>
+                    </div>
+                     
+                     
+                  </div>
+                </div>
+              <!-- SECCION - FIN -->
+
+              
+              </div>
+            </div>
+            <!-- card participante - fin  -->
+           
+          </div>
+          </div>
+          <!-- FILTRO DE BUSQUEDA - FIN -->
+
+        <!-- BUSQUEDA - INICIO -->
+
+        <!-- BUSQUEDA - FIN -->
+
+         <!-- <div class="card-body" data-mdb-perfect-scrollbar="true" style="position: relative; height: fluid">
+           
+          <table class="table  table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">CODIGO</th>
+                <th scope="col">PARTICIPANTE</th>
+                <th scope="col">UBICACION</th>
+                <th scope="col">ASISTENCIA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1<BR>CATEGORIA : <BR>GRAN MAESTRO</th>
+                <td>Mark Otto <BR>PERU<BR>ESPAÑOL</td>
+                <td>ZONA : 1<BR>
+                    CENA : 10<BR>
+                    ALMUERZO : 10</td>
+                <td>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input btn-lg" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">21:05:32</label>
+                  </div>
+              </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+
+
+          <!-- <div class="card-header p-3">
+            <h5 class="mb-0"><i class="fas fa-tasks me-2"></i>
+			      <P>LISTA DE INVITADOS</P></h5>
+			      <form class="d-flex justify-content-center align-items-center mb-4">
+              <div class="form-outline flex-fill">
+                <input type="text" id="form3" class="form-control form-control-lg sm-12" />
+                 
+              </div>
+             
+              <button type="submit" class="btn btn-danger btn-lg sm-2"> <i class="fa-solid fa-trash-can"></i> </button> 
+              <select class="form-select form-select-lg mb-0  sm-2" style=" with:25px"  >
+                <option selected value="ALL">ALL</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <button type="submit" class="btn btn-success btn-lg ms-2"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+              <button type="submit" class="btn btn-primary btn-lg ms-2"><i class="fa-solid fa-pen-to-square"></i> </button>
+
+              
+            </form>
+          </div>
+ -->
+
+         <!--  <div class="card-body" data-mdb-perfect-scrollbar="true" style="position: relative; height: fluid">
+
+            <table class="table mb-0 table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Invitado</th>
+                  <th scope="col">Task</th>
+                  <th scope="col">Priority</th>
+                  <th scope="col"> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="fw-normal">
+                  <td class="align-middle vertical-align-middle">
+                    <p > <h4>Alice Mayer </h4></p >
+                      <p >Call Sam For payments</p >
+                        <div class="col sm-12">
+                      <small class="sm-8" > 03/16 21:32 </small >
+                        <button type="submit" class="btn btn-warning btn-lg sm-4"> <i class="fa-solid fa-user-pen"></i> </button>
+                      </div>
+                       
+                  </td>
+                   
+                  <td class="align-middle">
+                    <span >Call Sam For payments</span >
+                  </td>
+                  <td class="align-middle">
+                    <h6 class="mb-0"><span class="badge bg-danger">High priority</span></h6>
+                  </td>
+                  <td class="align-middle">
+                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="fas fa-check text-success me-3"></i></a>
+                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="fas fa-trash-alt text-danger"></i></a>
+                  </td>
+                </tr>
+
+                   
+                <tr class="fw-normal">
+                  <th>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-4.webp" class="shadow-1-strong rounded-circle"
+                     alt="avatar 1"
+                      style="width: 55px; height: auto;">
+                    <span class="ms-2">Kate Moss</span>
+                  </th>
+                  <td class="align-middle">Make payment to Bluedart</td>
+                  <td class="align-middle">
+                    <h6 class="mb-0"><span class="badge bg-success">Low priority</span></h6>
+                  </td>
+                  <td class="align-middle">
+                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="fas fa-check text-success me-3"></i></a>
+                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="fas fa-trash-alt text-danger"></i></a>
+                  </td>
+                </tr>
+                 
+                <tr class="fw-normal">
+                  <th>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-4.webp" class="shadow-1-strong rounded-circle" alt="avatar 1"
+                      style="width: 55px; height: auto;">
+                    <span class="ms-2">Kate Moss</span>
+                  </th>
+                  <td class="align-middle">Make payment to Bluedart</td>
+                  <td class="align-middle">
+                    <h6 class="mb-0"><span class="badge bg-success">Low priority</span></h6>
+                  </td>
+                  <td class="align-middle">
+                    <a href="#!" data-mdb-toggle="tooltip" title="Done"><i class="fas fa-check text-success me-3"></i></a>
+                    <a href="#!" data-mdb-toggle="tooltip" title="Remove"><i class="fas fa-trash-alt text-danger"></i></a>
+                  </td>
+                </tr>
+                 
+              </tbody>
+            </table>
+
+          </div> -->
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--fin
+	 </div>-->
+	 
+	<script src="js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+
+	<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>	
+</html>
