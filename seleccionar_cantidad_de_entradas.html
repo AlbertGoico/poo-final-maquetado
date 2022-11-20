@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Archivo Base</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!--
+    <link href="css/all.css" rel="stylesheet"  crossorigin="anonymous">
+
+
+    <link href="css/fontawesome.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <link href="buscar.css" rel="stylesheet"  >
+-->
+</head>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+          <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+        </svg> REGISTRAR NUEVO</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <select class="form-select" aria-label="seleccione una categoria">
+          <option selected>SELECCIONE UNA CATEGORIA</option>
+          <option value="1">INVITADO</option>
+          <option value="2">PARTICIPPANTE</option>
+          <option value="3">ORGANIZADOR</option>
+          <option value="4">CHOFER</option>
+        </select>
+                <form class="form-floating">
+                    <input type="email" class="form-control my-1" id="floatingInputValue" placeholder="Nombres" value="">
+                    <label for="floatingInputValue">Nombres:</label>
+                </form>
+                <form class="form-floating">
+                    <input type="email" class="form-control my-1" id="floatingInputValue" placeholder="Apellidos" value="">
+                    <label for="floatingInputValue">Apellidos:</label>
+                </form>
+                <form class="form-floating">
+                    <input type="email" class="form-control my-1" id="floatingInputValue" placeholder="Apellidos" value="">
+                    <label for="floatingInputValue">Teléfono:</label>
+                </form>
+                <form class="form-floating">
+                    <input type="email" class="form-control my-1" id="floatingInputValue" placeholder="Apellidos" value="">
+                    <label for="floatingInputValue">Empresa:</label>
+                </form>
+                <form class="form-floating">
+                    <input type="email" class="form-control my-1" id="floatingInputValue" placeholder="Apellidos" value="">
+                    <label for="floatingInputValue">Cargo:</label>
+                </form>
+                <form class="form-floating">
+                    <input type="email" class="form-control is-invalid my-1" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+                    <label for="floatingInputInvalid">Correo</label>
+                </form>
+                <div class="form-floating">
+                    <textarea class="form-control my-1" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Observaciones</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+
+                <button type="submit" class="btn btn-info  btn-lg   ">
+              
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+    <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+  </svg>
+             
+</button>
+
+
+                <button type="submit" class="btn btn-success  btn-lg   ">
+              
+
+             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+  <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"/>
+</svg>
+             </button>
+
+
+                <button type="submit" class="btn btn-danger  btn-lg   " data-bs-dismiss="modal">
+              
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+              </svg>
+             </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal-FIN -->
+
+
+<body style="background-color:#FFFFFF;">
+
+
+    <nav class="navbar navbar-light color-light  shadow rounded">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1"> <img src="./images/logo2.png"></span>
+            <div class="d-flex text-end">
+
+
+
+                <!-- peliculas-->
+                <button type="submit" class="btn btn-dark  btn-lg  m-1 " style="opacity: 90%;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-camera-reels-fill" viewBox="0 0 16 16">
+                    <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path d="M9 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7z"/>
+                  </svg> Películas
+             </button>
+
+                <!-- dulceria-->
+                <button type="submit" class="btn btn-dark  btn-lg   m-1" style="opacity: 90%;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                    <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                  </svg> Dulcería
+              </button>
+                <!-- about-->
+                <button type="submit" class="btn btn-dark  btn-lg   m-1" style="opacity: 90%;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-info-square-fill" viewBox="0 0 16 16">
+                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  </svg>
+</button>
+                <!-- whatssap-->
+                <button class="btn btn-dark   btn-lg  m-1 " type="button" style="opacity: 90%;" data-bs-toggle="modal" data-bs-target="" P>
+                 <a style="color:#FFFFFF" class="  color-light" href="https://api.whatsapp.com/send/?phone=51982536807" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                  </svg></a>
+             </button>
+
+                <!-- daltonismo data-bs-target="#exampleModal"-->
+                <button class="btn btn-dark   btn-lg  m-1 " type="button" style="opacity: 90%;" data-bs-toggle="modal" P>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg>
+             </button>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- peliculas - inicio -->
+    <section class="   bg-transparent  mt-3">
+        <div class="row container py-2 h-flex  shadow m-auto ">
+            <div class="col text-center">
+                <!-- cartel 1 - incio -->
+                <div class="row border border-start-0 border-bottom-0 border-top-0">
+                    <div class="col    m-auto mt-2  ">
+                        <div class="row">
+                            <div class="col-md-5 m-auto p-1">
+                                <h3 class="card-title " style="color:#004A8C"><b>Jeepers Creepers</b></h3>
+                                <p class="card-text   text-dark"><b>Terror, 1h 30min, +14.</b></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-8 m-auto p-1">
+                                <img src="https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001505?referenceScheme=HeadOffice&allowPlaceHolder=true" class="img-fluid rounded" alt="...">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <div class="col   ">
+                                    <a href="#" class="btn btn-none border border-2 border-secondary"><b>2 PM</b><br><b>DOBLADA</b></a></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- cartel 1 - fin -->
+            </div>
+            <div class="col   p-1">
+                <div class="row">
+                    <div class="col">
+                        <div class="row m-auto mt-2">
+                            <div class="  mb-3 ">
+                                <h5><b>SELECCIONE SUS ENTRADAS</b></h5>
+                            </div>
+                        </div>
+                        <div class="row m-auto">
+                            <div class="col 8">
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+
+                                            <th scope="col">Tipo de entrada</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Precio</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td>Adulto :</td>
+                                            <td>
+
+                                                <input type="text" class="form-control" placeholder="0">
+
+                                            </td>
+                                            <td>14.00</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Adulto mayor :</td>
+                                            <td><input type="text" class="form-control" placeholder="0"></td>
+                                            <td>10.00</td>
+                                        </tr>
+                                        <tr>
+                                            <tr>
+
+                                                <td>Niños :</td>
+                                                <td><input type="text" disabled class="form-control" placeholder="0"></td>
+                                                <td>7.50</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">total :</th>
+
+                                                <td>0.0</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                                <div class="alert alert-warning" role="alert">
+                                    * Esta pelicula está clasificada para mayoes de 14 años, no se permite niños.
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+    <!-- peliculas - fin -->
+
+
+
+
+
+    <!-- cuerpo-->
+    <footer class="footer mt-auto py-3 bg-light " style="position: absolute;
+    bottom: 0; width: 100%;">
+        <div class="container  text-center">
+            <span class="text-muted">&copy; Grupo 3 multicines 2022 </span>
+        </div>
+    </footer>
+    <!--fin
+	 </div>-->
+
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+</body>
+
+</html>
